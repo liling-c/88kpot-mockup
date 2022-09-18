@@ -1,0 +1,77 @@
+/* css reset to make sure that the webpage doesn't have any weird whitespace*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #212529;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#main-page {
+    background-image: url("assets/pork-jowl.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* all of the above can also be written as
+    background: url("assets/pork-jowl.jpeg") center center cover no-repeat fixed; */
+}
+
+#logo {
+    height: 100px;
+}
+
+.social-icon {
+    margin: 5px;
+}
+
+#flex-social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flex-main-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3vw;
+    padding: 3vw 0;
+}
+
+#main-content {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+
+#main-content-msg {
+    font-size: 36px;
+    text-align: center;
+}
+
+.main-nav-link {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 95px;
+    margin: 0 2vw; /* need to change these values later */
+}
+
+.main-nav-link:hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+#flex-main-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
