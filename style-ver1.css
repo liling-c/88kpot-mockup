@@ -33,7 +33,7 @@ p {
 }
 
 .logo {
-    height: 100px;
+    height: 120px;
 }
 
 .social-icon {
@@ -70,6 +70,7 @@ p {
 }
 
 #main-content-msg {
+    font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 2vw;
     text-align: center;
 }
