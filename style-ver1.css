@@ -16,17 +16,23 @@ a {
     text-decoration: none;
 }
 
-#main-page {
-    background-image: url("assets/pork-jowl.jpeg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    /* all of the above can also be written as
-    background: url("assets/pork-jowl.jpeg") center center cover no-repeat fixed; */
+h1 {
+    text-align: center;
+    margin: 1vw 2vw;
 }
 
-#logo {
+hr {
+    border: thin solid #d00000;
+    width: 80%
+}
+
+/* styling for paragraph elements is tentative and only for this mockup*/
+p {
+    padding: 0 10%;
+    margin: 1vw 0;
+}
+
+.logo {
     height: 100px;
 }
 
@@ -34,17 +40,27 @@ a {
     margin: 5px;
 }
 
-#flex-social-container {
+.flex-social-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#flex-main-header {
+.flex-header {
     display: flex;
     justify-content: space-between;
     margin: 0 3vw;
     padding: 3vw 0;
+}
+
+/* below starts all the styling specific to the main/home page */
+
+#main-page {
+    /* background-image: url("assets/pork-jowl.jpeg"); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #main-content {
@@ -54,14 +70,14 @@ a {
 }
 
 #main-content-msg {
-    font-size: 36px;
+    font-size: 2vw;
     text-align: center;
 }
 
 .main-nav-link {
     font-family: 'Encode Sans SC', sans-serif;
-    font-size: 95px;
-    margin: 0 2vw; /* need to change these values later */
+    font-size: 5vw;
+    margin: 0 2vw;
 }
 
 .main-nav-link:hover {
@@ -73,5 +89,36 @@ a {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    padding: 1vw 0.5em 3vw 0.5em;
     margin: 0 auto;
+}
+
+/* media queries that adjust the main content font size and other sizing depending on screen size */
+
+@media screen and (max-width: 1440px) {
+    #main-content-msg {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 871px) {
+    .main-nav-link:hover {
+        border-bottom: 1px solid #ffffff;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .main-nav-link {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #flex-main-nav {
+        flex-flow: column nowrap;
+    }
+
+    .main-nav-link {
+        margin: 1vw 2vw;
+    }
 }
